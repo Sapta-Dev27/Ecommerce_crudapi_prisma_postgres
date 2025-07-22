@@ -9,8 +9,8 @@ const PORT = process.env.PORT || 8000;
 
 app.use(express.json())
 
-app.use('/products', product);
-app.use('/category', category);
+app.use('/api/v1/products', product);
+app.use('/api/v1/category', category);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

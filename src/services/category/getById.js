@@ -4,7 +4,9 @@ const prisma = new PrismaClient();
 const getCategoryById = async (cat_id) => {
   try {
     const getbyId = await prisma.category.findUnique({
-      id: cat_id
+      where : {
+        id: cat_id
+      }
     })
     if (getbyId) {
       console.log("Category fetched successfully by ID");

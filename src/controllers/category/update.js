@@ -2,7 +2,8 @@ import updateCategory from "../../services/category/update.js";
 
 const updateCategoryController = async (req, res) => {
   try {
-    const { cat_name } = req.body;
+    console.log(req.body);
+    const {cat_name} = req.body;
     const cat_id = parseInt(req.params.id);
     const updated_Category = await updateCategory(cat_id, cat_name);
     if (updated_Category === null) {

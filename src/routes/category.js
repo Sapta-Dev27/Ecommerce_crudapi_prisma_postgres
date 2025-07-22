@@ -8,10 +8,10 @@ import deleteCategory from '../controllers/category/delete.js';
 
 const router = express.Router();
 
-router.post('/addCategory', addCategory);
-router.get('/getAllCategories', getAllCategories);
-router.get('/getCategory/:id', getCategoryById);
-router.put('/updateCategory/:id', updateCategory);
-router.delete('/deleteCategory/:id', deleteCategory);
+router.post('/create', addCategory);
+router.get('/fetch', getAllCategories);
+router.get('/fetch/:id', getCategoryById);
+router.put('/update/:id', updateCategory);
+router.delete('/delete/:id', deleteCategory);
 
 export default router;

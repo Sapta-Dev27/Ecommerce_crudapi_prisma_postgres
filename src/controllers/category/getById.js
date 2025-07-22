@@ -13,6 +13,7 @@ const getCategoryByIdController = async (req, res) => {
     return res.status(200).json({
       success: true,
       message: "Category fetched successfully by ID",
+      data : category_byid
     })
   }
   catch (error) {

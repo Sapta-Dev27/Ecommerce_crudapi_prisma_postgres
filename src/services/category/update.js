@@ -22,7 +22,7 @@ const updateCategory = async (cat_id, cat_name) => {
     })
     if (updatedCategory) {
       console.log("Category updated successfully");
-      return updateCategory
+      return updatedCategory
     }
     return null;
   }

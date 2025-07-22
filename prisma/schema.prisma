@@ -17,7 +17,7 @@ model Category {
 
 model Product {
   id                  Int      @id @default(autoincrement())
-  product_name        String
+  product_name        String   
   product_description String
   price               Float
   available           Boolean  @default(true)
