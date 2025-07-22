@@ -22,11 +22,11 @@ This is a RESTful API built using Node.js, Express.js, and PostgreSQL for managi
 
 # 🧠 Tech Stack
 
-1.Backend: Node.js, Express.js
-2.Database: PostgreSQL
-3.ORM: Prisma (assumed from typical stack)
-4.API Client: Postman (used for testing)
-5.Architecture: MVC Pattern
+1. Backend: Node.js, Express.js
+2. Database: PostgreSQL
+3. ORM: Prisma (assumed from typical stack)
+4. API Client: Postman (used for testing)
+5. Architecture: MVC Pattern
 
 # 📦 API Endpoints For Category
 ```
