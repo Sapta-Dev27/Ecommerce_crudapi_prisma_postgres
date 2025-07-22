@@ -3,7 +3,7 @@ This is a RESTful API built using Node.js, Express.js, and PostgreSQL for managi
 
 ![WhatsApp Image 2025-07-20 at 11 49 09_1267be7c](https://github.com/user-attachments/assets/e0c0f65e-13f5-492e-89f7-4feae1bcae4f)
 
-#📂 Project Structure
+# 📂 Project Structure
 ```
 ├── models/
 │   └── Category, Product (PostgreSQL)
@@ -22,11 +22,11 @@ This is a RESTful API built using Node.js, Express.js, and PostgreSQL for managi
 
 # 🧠 Tech Stack
 
-Backend: Node.js, Express.js
-Database: PostgreSQL
-ORM: Prisma (assumed from typical stack)
-API Client: Postman (used for testing)
-Architecture: MVC Pattern
+1.Backend: Node.js, Express.js
+2.Database: PostgreSQL
+3.ORM: Prisma (assumed from typical stack)
+4.API Client: Postman (used for testing)
+5.Architecture: MVC Pattern
 
 # 📦 API Endpoints For Category
 ```
