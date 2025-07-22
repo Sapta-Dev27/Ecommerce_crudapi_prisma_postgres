@@ -3,7 +3,7 @@ import createProduct from '../../services/products/create.js';
 const createProductController = async (req, res) => {
   try {
     const { productname, productdesc, productPrice, productStatus, categoryId } = req.body;
-    if (!productname || !productdesc || !productdesc || !productPrice || !productStatus || !categoryId) {
+    if (!productname || !productdesc || !productPrice || productStatus === undefined|| !categoryId) {
       return res.status(400).json({
         success: false,
         message: 'All fields are required'

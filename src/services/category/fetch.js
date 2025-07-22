@@ -3,7 +3,11 @@ const prisma = new PrismaClient();
 
 const fetchAllCategories = async () => {
   try {
-    const categories = await prisma.category.findMany();
+    const categories = await prisma.category.findMany({
+      include :{
+        Products : true
+      }
+    });
     if(categories.length > 0 ) {
       console.log("Categories fetched successfully");
       return categories;

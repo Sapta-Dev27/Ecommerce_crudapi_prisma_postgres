@@ -6,6 +6,9 @@ const getCategoryById = async (cat_id) => {
     const getbyId = await prisma.category.findUnique({
       where : {
         id: cat_id
+      },
+      include : {
+        Products: true
       }
     })
     if (getbyId) {

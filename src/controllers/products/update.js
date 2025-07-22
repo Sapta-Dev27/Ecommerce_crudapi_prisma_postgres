@@ -3,8 +3,8 @@ import updateProduct from '../../services/products/update.js'
 const updateProductController = async (req, res) => {
   try {
     const productId = parseInt(req.params.id);
-    const { updated_title, updated_desc, updated_price, updated_avail, } = req.body;
-    const updated_product = await updateProduct(updated_title, updated_desc, updated_price, updated_avail,);
+    const { updated_title, updated_desc, updated_price, updated_avail } = req.body;
+    const updated_product = await updateProduct(updated_title, updated_desc, updated_price, updated_avail,productId);
     if (updated_product === null) {
       return res.status(404).json({
         success: false,
